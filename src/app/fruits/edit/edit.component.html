@@ -1,0 +1,39 @@
+<div class="container">
+    <legend>Edit Item</legend>
+    <form>
+        <div class="mb-3">
+            <label for="txtname" class="form-label">Nome</label>
+            <input 
+               type="text" 
+               class="form-control" 
+               id="txtName" 
+               aria-describedby="emailHelp"
+               name="fruitname"
+               [(ngModel)] = "fruitForm.name"            
+               />
+        </div>
+        <div class="mb-3">
+          <label for="txtquantity" class="form-label">Quantity</label>
+          <input 
+             type="number" 
+             class="form-control" 
+             id="txtquantity" 
+             aria-describedby="emailHelp"
+             name="quantity"
+             [(ngModel)] = "fruitForm.quantity" 
+             />
+             </div>
+        <div class="mb-3">
+            <label for="txtprice" class="form-label">Price</label>
+            <input 
+               type="number" 
+               class="form-control" 
+               id="txtprice" 
+               aria-describedby="emailHelp"
+               name="price"
+               [(ngModel)] = "fruitForm.price" 
+               />
+               </div>
+        <button type="button" (click)="update()" class="btn btn-primary">Submit</button>
+      </form>
+</div>
